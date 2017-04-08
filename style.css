@@ -1,0 +1,44 @@
+.background {
+  background-image: url("bubble-background.jpg");
+  min-height: 200px;
+}
+
+.welcome{
+  min-height: 200px;
+  background: #ffb9b9;
+  padding: 46px;
+
+}
+
+h1 {
+  font-family: monospace;
+}
+
+h4 {
+  font-family: serif;
+}
+
+a {
+  color: rgba(0, 184, 255, 1);
+  text-shadow: 0px 1px black;
+}
+
+.btn-default {
+    height: 59px;
+    width: 171px;
+    background-color: #fff;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.grid-box {
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  height: 200px;
+  border: rgba(0, 184, 255, 0.59) solid 15px;
+  border-radius: 15px;
+  background-color: white;
+}
