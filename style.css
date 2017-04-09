@@ -20,7 +20,6 @@ h4 {
 
 a {
   color: rgba(0, 184, 255, 1);
-  text-shadow: 0px 1px black;
 }
 
 .btn-default {
@@ -33,6 +32,11 @@ a {
   text-align: center;
 }
 
+.btn-classes{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+}
 .grid-box {
   padding: 10px;
   text-align: center;
@@ -54,4 +58,8 @@ a {
 
 .footer {
   margin: 20px;
+}
+
+.grid-box{
+   cursor: pointer;
 }
