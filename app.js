@@ -2,7 +2,7 @@ function switchPage(whichPage){
   $(".page").hide();
   $(whichPage).show();
 }
-switchPage(".home-page-content")
+switchPage("#home-page-content")
 
 $(".switch-to-home").click(function(){
   switchPage("#home-page-content")
