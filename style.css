@@ -61,7 +61,7 @@ a {
 }
 
 .footer {
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .footer-group {
@@ -70,4 +70,10 @@ a {
 
 .grid-box{
    cursor: pointer;
+}
+
+.home-button{
+  /*width: 50%;*/
+  margin-top: 10px;
+  /*background-color: rgba(0, 184, 255, 0.59);*/
 }
