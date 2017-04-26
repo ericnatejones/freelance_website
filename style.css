@@ -1,5 +1,5 @@
 .background {
-  background-image: url("bubble-background.jpg");
+  /*background-image: url("bubble-background.jpg");*/
   min-height: 200px;
 }
 
@@ -76,4 +76,12 @@ a {
   /*width: 50%;*/
   margin-top: 10px;
   /*background-color: rgba(0, 184, 255, 0.59);*/
+}
+
+a {
+  color: black;
+}
+
+.top-scroll {
+  display: block;
 }

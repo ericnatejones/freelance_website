@@ -6,11 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
+<!-- favicon stuff -->
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+
   <link type="text/css" rel="stylesheet" href="bootstrap.css" />
   <link type="text/css" rel="stylesheet" href="style.css" />
 
 </head>
-<body class="background">
+<body id="body" class="background">
+  <span id="top"></span>
   <nav class="navbar">
   <div class="container navbar-customizations">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,16 +67,12 @@
             Pay one session at a time as needed with no further commitment on your part.
           </p>
           <p class="text-center">Would you rather have someone write code for you? I also frelance</p>
-          <div class="button-group">
-                <button class="text-center btn btn-default btn-classes btn-large switch-to-page-1">Learning</button>
-                <button class="text-center btn btn-default btn-classes btn-large switch-to-page-6">Freelance</button>
 
-          </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-md-4 switch-to-page-1">
+    <a class="smooth-scroll" data-scroll href="#info-page-1-content"><div class="col-sm-6 col-md-4 switch-to-page-1">
       <div class="grid-box">
         <h3>Determine what you need</h3>
         <p>
@@ -74,52 +80,62 @@
         </p>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 switch-to-page-2">
-      <div class="grid-box">
-        <h3>Get tutoring when you need it</h3>
-        <p>
-          You could use a bit of help here and there. Get help only when you're stuck.
-        </p>
-      </div>
-
-    </div>
-    <div class="col-sm-6 col-md-4 switch-to-page-3">
-      <div class="grid-box">
-
-        <h3>Go from Zero to Hero</h3>
-        <p>
-          There are some really good ways to become a coding super star, there is a laid out plan of action for you.
-        </p>
-      </div>
-
-
-    </div>
-      <div class="col-sm-6 col-md-4 switch-to-page-4">
+    <a class="smooth-scroll" data-scroll href="#info-page-2-content">
+      <div class="col-sm-6 col-md-4 switch-to-page-2">
         <div class="grid-box">
-          <h3>Learn a new Framework, Library or Language</h3>
+          <h3>Get tutoring when you need it</h3>
           <p>
-            You have some experience, but want to learn something new. Angular, JavaScript, Django, Bootstrap are just a few of your options.
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 switch-to-page-5">
-        <div class="grid-box">
-          <h3>Job Assistance</h3>
-          <p>
-            With 2+ years of helping new coders get work, I'll share what I know about breaking into this industry.
+            You could use a bit of help here and there. Get help only when you're stuck.
           </p>
         </div>
 
       </div>
-      <div class="col-sm-6 col-md-4 switch-to-page-6">
+    </a>
+    <a class="smooth-scroll" data-scroll href="#info-page-3-content">
+      <div class="col-sm-6 col-md-4 switch-to-page-3">
         <div class="grid-box">
-          <h3>Freelance Work</h3>
+
+          <h3>Go from Zero to Hero</h3>
           <p>
-            I don't just teach, I love working on stuff too. Wordpress and Shopify are also in my wheelhouse.
+            There are some really good ways to become a coding super star, there is a laid out plan of action for you.
           </p>
         </div>
 
-</div>
+
+      </div>
+    </a>
+      <a class="smooth-scroll" data-scroll href="#info-page-4-content">
+        <div class="col-sm-6 col-md-4 switch-to-page-4">
+          <div class="grid-box">
+            <h3>Learn a new Framework, Library or Language</h3>
+            <p>
+              You have some experience, but want to learn something new. Angular, JavaScript, Django, Bootstrap are just a few of your options.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a class="smooth-scroll" data-scroll href="#info-page-5-content">
+        <div class="col-sm-6 col-md-4 switch-to-page-5">
+          <div class="grid-box">
+            <h3>Job Assistance</h3>
+            <p>
+              With 2+ years of helping new coders get work, I'll share what I know about breaking into this industry.
+            </p>
+          </div>
+
+        </div>
+      </a>
+      <a class="smooth-scroll" data-scroll href="#info-page-6-content">
+        <div class="col-sm-6 col-md-4 switch-to-page-6">
+          <div class="grid-box">
+            <h3>Freelance Work</h3>
+            <p>
+              I don't just teach, I love working on stuff too. Wordpress and Shopify are also in my wheelhouse.
+            </p>
+          </div>
+
+      </div>
+    </a>
   </div>
 
   <div class="row">
@@ -171,7 +187,7 @@
           </p>
         </div>
         <div class="button-group">
-          <button class="switch-to-home home-button home-button text-center btn-lg btn btn-classes">Home</button>
+          <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button home-button text-center btn-lg btn btn-classes">Top</button></a>
         </div>
       </div>
     </div>
@@ -196,7 +212,7 @@
           </p>
         </div>
         <div class="button-group">
-          <button class="switch-to-home home-button text-center btn-lg btn btn-classes">Home</button>
+          <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button text-center btn-lg btn btn-classes">Top</button></a>
         </div>
       </div>
     </div>
@@ -212,14 +228,14 @@
         <div class="info-box">
 
         <p>
-          You know that you want to get into web development as quickly as possible, for as little money as
+          This option is for people who know they want to get into web development as quickly as possible, for as little money as
           possible. The web has all the information that you need, I'll supply the outline, motivation, one on
-          one tutoring, anytime help to answer questions where you might get stuck, and career guidence that is
+          one tutoring, anytime help to answer questions wher people might get stuck, and career guidence that is
           harder to find online.
         </p>
         <p>
           This plan is the value plan. Bootcamps and four year degrees have their place, but aren't for everyone
-          The course provides all the flexiblity you need, with just the right amount of real person assistance.
+          The course provides all the flexiblity that is needed, with just the right amount of real person assistance.
           Pay only by the week. If at a few weeks in, you decide it's not working for you, you havn't sunk $10,000
           into it. You're out less than a grand, and you've learned a lot.
         </p>
@@ -231,7 +247,7 @@
 
         </div>
         <div class="button-group">
-          <button class="switch-to-home home-button text-center btn-lg btn btn-classes">Home</button>
+          <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button text-center btn-lg btn btn-classes">Top</button></a>
         </div>
       </div>
     </div>
@@ -290,7 +306,7 @@
 
         </div>
 <div class="button-group">
-  <button class="switch-to-home home-button text-center btn-lg btn btn-classes">Home</button>
+  <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button text-center btn-lg btn btn-classes">Top</button></a>
 </div>
       </div>
     </div>
@@ -301,32 +317,27 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="page-header">
-          <h1 class="text-center">Career</h1>
+          <h1 class="text-center">Young People</h1>
         </div>
         <div class="info-box">
           <p>
-            You have the skills, now it's time to score your dream job. I've been helping students of
-            on of the worlds top coding bootcamps find work for over two years. I know the industry and
-            can help you know what course of action is right for you. Solid preparation will make all the
-            difference. Get help with:
+             Kids and teens have a natural aptitude for coding.
           </p>
-
-          <ul>
-            <li>Building and writing your resume</li>
-            <li>Cover letters</li>
-            <li>Technical interview practice</li>
-            <li>Networking</li>
-            <li>Building your github</li>
-            <li>Getting involved</li>
-            <li>Creating a bombproof portfolio</li>
-          </ul>
           <p>
-            $60 an hour is my standard rate. If making a plan and meeting consistently is right for you,
-            I can charge less.
+            I use Scratch and Swift Playgrounds by Apple to teach pre-teen kids the basics of coding.
+          </p>
+          <p>
+            There two programs make it feel like you are just playing a game! While learning the mechanics
+            of the game, kids are actually learning the foundations of programming! These are principles
+            that are often times difficult for adults to pick up.
+          </p>
+          <p>
+            I have a modified curriculum for teens that feel ready to dive directly into code and potentially
+            jumpstart a rewarding career.
           </p>
         </div>
         <div class="button-group">
-          <button class="switch-to-home home-button text-center btn-lg btn btn-classes">Home</button>
+          <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button text-center btn-lg btn btn-classes">Top</button></a>
         </div>
       </div>
     </div>
@@ -350,7 +361,7 @@
           </p>
         </div>
         <div class="button-group">
-          <button class="switch-to-home home-button text-center btn-lg btn btn-classes">Home</button>
+          <a data-scroll class="top-scroll" href="#top"><button class="switch-to-home home-button text-center btn-lg btn btn-classes">Top</button></a>
         </div>
       </div>
     </div>
@@ -363,19 +374,22 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="button-group">
-        <button class="text-center btn-lg btn btn-classes">Contact me</button>
+        <a href="#top"><button class="text-center btn-lg btn btn-classes">Contact me</button>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="footer-group">
-      <div class="col-xs-4">
+      <div class="col-sm-3">
         Eric Jones
       </div>
-      <div class="col-xs-4 text-center">
+      <div class="col-sm-3">
+        ericnatejones@gmail.com
+      </div>
+      <div class="col-sm-3 text-center">
         (801)815-0062
       </div>
-      <div class="col-xs-4 text-right">
+      <div class="col-sm-3 text-right">
         <a href="github.com/ericnatejones/">github.com/ericnatejones</a>
       </div>
     </div>
@@ -388,6 +402,8 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="bootstrap.js"></script>
+  <script src="bootstrap-check.js"></script>
+  <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
